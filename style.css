@@ -166,7 +166,8 @@ nav h1{
         text-align: center;
     }
     .myhome p{
-        font-size: 15px;      
+        font-size: 15px;   
+        text-align: center;   
     }
     .button{
         flex-direction: column;
