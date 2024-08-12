@@ -155,11 +155,7 @@ nav h1{
     .myimg{
         margin-top: 0px;
     }
-    .more{
-        margin-top: 20px;
-        margin-left: 1px;
-        border-radius: none;
-    }
+    
 }
 @media (max-width: 680px){
     .myhome h1{
@@ -184,6 +180,6 @@ nav h1{
     .more{
         margin-top: 20px;
         margin-left: 1px;
-        border-radius: none;
+        border-radius: 0;
     }
 }
