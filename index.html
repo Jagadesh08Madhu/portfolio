@@ -9,20 +9,22 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
+      
+
     <div class="navbar">
       <nav>
         <h1 class="jaga">JAGA TECH</h1>
         <h1 class="jt">JT</h1>
         <ul class="list-items">
-          <a href="#home"><li>Home</li></a>
-          <a href=""><li>About</li></a>
-          <a href=""><li>Projects</li></a>
+          <a href="#home"><li onclick="showAbout('home')">Home</li></a>
+          <a href="#about"><li class="about-nav" onclick="showAbout('about')">About</li></a>
+          <a href="#skills"><li>skills</li></a>
           <a href=""><li>Contact</li></a>
         </ul>
         <ul class="list-icon">
           <a href="#home"><li><span class="material-symbols-outlined">home</span></li></a>
-          <a href=""><li><span class="material-symbols-outlined">person</span></li></a>
-          <a href=""><li><span class="material-symbols-outlined">code</span></li></a>
+          <a href="" class="about-nav"><li><span class="material-symbols-outlined">person</span></li></a>
+          <a href=""><li><span class="material-symbols-outlined">progress_activity</span></li></a>
           <a href=""><li><span class="material-symbols-outlined">contacts_product</span></li></a>
         </ul>
       </nav>
@@ -44,8 +46,24 @@
             <button class="read">Read more</button>
             <button class="more">More info</button>
         </div>
-      </div>
-      
+      </div>     
      </section>
+
+     <section id="about" class="about">
+          <div class="about-us">
+            <div class="about-para">
+              <h2>Front-End Developer</h2>
+              <p>
+                I'm Jagadesh, a dedicated Front-End Developer with a passion for crafting intuitive and engaging user experiences. 
+                With a solid background in React.js, I build responsive and dynamic web applications that are both visually appealing and 
+                functionally robust. My expertise lies in transforming complex designs into seamless, interactive interfaces that enhance 
+                user engagement. I'm constantly exploring new technologies and trends in the web development space to ensure that my projects 
+                meet the highest standards. Welcome to my portfolio—let's create something amazing together!
+                </p></div>
+            <div class="about-image"><img class="about-img" src="./Images/about.jpg" alt=""></div>
+          </div>
+     </section>
+
+     <script src="/script.js"></script>
 </body>
 </html>
