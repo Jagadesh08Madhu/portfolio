@@ -73,7 +73,7 @@ nav h1{
     height: 70vh;
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 1;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     padding: 50px;
@@ -140,6 +140,24 @@ nav h1{
 .jt{
     display: none;
 }
+@media (max-width: 1310px){
+    .about{
+        overflow-y: scroll;
+        text-align: center;
+        overflow-x: hidden;
+        margin-top: -15px;
+    }
+    .about-us{
+       flex-direction: column;
+    }
+    .about-para{
+        margin-top: 400px;
+        padding: 50px;
+    }
+    .about-img{
+        display: flex;
+    }
+}
 
 @media (max-width: 991px) {
     #home{
@@ -156,11 +174,28 @@ nav h1{
     .myimg{
         margin-top: 0px;
     }
+    .about{
+        overflow-y: scroll;
+        text-align: center;
+        overflow-x: hidden;
+        margin-top: -15px;
+    }
+    .about-us{
+       flex-direction: column;
+    }
+    .about-para{
+        margin-top: 400px;
+        padding: 50px;
+    }
+    .about-img{
+        display: flex;
+    }
     
 }
 @media (max-width: 680px){
     #home{
         width: 70%;
+        margin-top: -15px;
     }
     .myhome h1{
         text-align: center;
@@ -173,7 +208,7 @@ nav h1{
         flex-direction: column;
     }
     .myimg{
-        margin-top: 150px;
+        margin-top: 20px;
     }
     .jaga{
         display:none;
@@ -190,14 +225,17 @@ nav h1{
         overflow-y: scroll;
         text-align: center;
         overflow-x: hidden;
+        margin-top: -15px;
     }
     .about-us{
        flex-direction: column;
     }
     .about-para{
-        width: 100%;
-        margin-top: 350px;
+        margin-top: 800px;
         padding: 50px;
+    }
+    .about-img{
+        display: none;
     }
 }
 
@@ -230,3 +268,71 @@ nav h1{
     color: white;
     padding-right: 20px;
 }
+
+
+
+/* skill */
+.skill{
+    position: relative;
+    left: 30%;
+    top: 15vh;
+    width: 70%;
+    height: 70vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    overflow-y: scroll;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    padding: 20px;
+    
+  }
+
+  .box {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    padding:20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    height: 150px;
+    position: relative;
+    box-shadow: 10px 10px 20px rgba(255, 255, 255, 0.3);
+  }
+  .skill-logo{
+    position: absolute;
+    width: 70px;
+    right: -10px;
+    top: -20px;
+    background-color: white;
+    border-radius: 50%;
+    padding: 10px;
+    border: 3px solid aqua;
+    box-shadow: 10px 10px 20px rgba(255, 255, 255, 0.3);
+    }
+
+.hover-text{
+    position: absolute;
+    bottom: -100%; /* Start outside the bottom of the container */
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: bottom 0.5s ease; /* Smooth transition for the sliding effect */
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}    

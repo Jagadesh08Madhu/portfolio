@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Hover with Animation</title>
+  <style>
+    .image-container {
+      position: relative;
+      width: 300px;
+      height: 200px;
+      overflow: hidden; /* Ensures that the content doesn't spill outside the container */
+      border-radius: 10px;
+    }
+
+    .image-container img {
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+      transition: transform 0.5s ease; /* Smooth scaling effect */
+    }
+
+    .hover-text {
+      position: absolute;
+      bottom: -100%; /* Start outside the bottom of the container */
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: bottom 0.5s ease; /* Smooth transition for the sliding effect */
+      text-align: center;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    .image-container:hover img {
+      transform: scale(1.1); /* Scale the image on hover */
+    }
+
+    .image-container:hover .hover-text {
+      bottom: 0; /* Slide the text up into view */
+    }
+  </style>
+</head>
+<body>
+
+  <div class="image-container">
+    <img src="https://via.placeholder.com/300x200" alt="Placeholder Image">
+    <div class="hover-text">
+      <p>This is the paragraph that appears with animation when you hover over the image. You can add any content here!</p>
+    </div>
+  </div>
+
+</body>
+</html>
