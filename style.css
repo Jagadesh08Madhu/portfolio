@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=League+Spartan&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Cinzel", serif;
+}
+body{
+    background-image: url(./Images/84965.jpg);
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center;
+}
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(2, 2, 2, 0.8);
+    z-index: -1;
+}
+.navbar{
+    position: fixed;
+    top: 15%;
+    height: 70vh;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+}
+.navbar::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items:center;
+    left: 10px;
+}
+nav h1{
+    color: white;
+}
+.list-items a li{
+    padding: 15px 30px 15px 30px ;
+    margin: 30px;
+    color: rgb(255, 255, 255);
+    list-style: none;
+}
+.list-items a{
+    text-decoration:  none;
+}
+
+.list-items a :hover{
+    background-color: white;
+    color: black;
+    transition: 0.5s ease-in-out;
+}
+#home{
+    position: relative;
+    left: 30%;
+    top: 15vh;
+    width: 70%;
+    height: 70vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+#home img{
+    width: 150px;
+    border-radius: 20px;
+}
+.myhome{
+    color: white;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+}
+.myhome p{
+    margin: 10px 0 10px 0;
+}
+.button{
+    display: flex;
+}
+.read{
+    width: 150px;
+    height: 40px;
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><rect fill="%23FF156D" stroke="%23FF156D" stroke-width="15" stroke-linejoin="round" width="30" height="30" x="85" y="85" rx="0" ry="0"><animate attributeName="rx" calcMode="spline" dur="2" values="15;15;5;15;15" keySplines=".5 0 .5 1;.8 0 1 .2;0 .8 .2 1;.5 0 .5 1" repeatCount="indefinite"></animate><animate attributeName="ry" calcMode="spline" dur="2" values="15;15;10;15;15" keySplines=".5 0 .5 1;.8 0 1 .2;0 .8 .2 1;.5 0 .5 1" repeatCount="indefinite"></animate><animate attributeName="height" calcMode="spline" dur="2" values="30;30;1;30;30" keySplines=".5 0 .5 1;.8 0 1 .2;0 .8 .2 1;.5 0 .5 1" repeatCount="indefinite"></animate><animate attributeName="y" calcMode="spline" dur="2" values="40;170;40;" keySplines=".6 0 1 .4;0 .8 .2 1" repeatCount="indefinite"></animate></rect></svg>');
+    background-size: contain; /* Adjust as needed */
+    background-position: left; /* Adjust as needed */
+    background-repeat: no-repeat; /* Ensure it doesn’t repeat */
+}
+.read:hover{
+    background-color: #fff;
+    color: black;
+}
+.more{
+    margin-left: 20px;
+    width: 150px;
+    height: 40px;
+}
+.more:hover{
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+}
+.list-icon{
+    display: none;
+}
+.list-icon a li{
+    padding: 15px 30px 15px 30px ;
+    margin: 30px;
+    color: rgb(255, 255, 255);
+    list-style: none;
+}
+.list-icon a{
+    text-decoration:  none;
+}
+
+.list-icon a :hover{
+    background-color: white;
+    color: black;
+    transition: 0.5s ease-in-out;
+}
+.jt{
+    display: none;
+}
+
+@media (max-width: 991px) {
+    #home{
+        flex-direction: column;
+        overflow-y: scroll;
+    }
+    .list-icon{
+        display: block;
+    }
+    .list-items{
+        display: none;
+    }
+    .myimg{
+        margin-top: 0px;
+    }
+}
+@media (max-width: 680px){
+    .myhome h1{
+        text-align: center;
+    }
+    .myhome p{
+        font-size: 15px;
+        text-align: center;
+    }
+    .button{
+        flex-direction: column;
+    }
+    .myimg{
+        margin-top: 400px;
+    }
+    .jaga{
+        display:none;
+    }
+    .jt{
+        display: flex;
+    }
+    .more{
+        margin-top: 20px;
+        margin-left: 1px;
+    }
+}
