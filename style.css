@@ -168,7 +168,7 @@ nav h1{
         flex-direction: column;
     }
     .myimg{
-        margin-top: 400px;
+        /* margin-top: 400px; */
     }
     .jaga{
         display:none;
