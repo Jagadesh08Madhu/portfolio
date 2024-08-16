@@ -12,6 +12,12 @@ body{
     background-size: cover;
     background-position: center;
 }
+.copyright{
+    position: absolute;
+    bottom: 0;
+    left: 40%;
+    color: #fff;
+}
 body::before {
     content: "";
     position: absolute;
@@ -73,7 +79,7 @@ nav h1{
     height: 70vh;
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 1;
-    display: none;
+    display: flex;
     justify-content: center;
     align-items: center;
     padding: 50px;
@@ -195,7 +201,7 @@ nav h1{
 @media (max-width: 680px){
     #home{
         width: 70%;
-        margin-top: -15px;
+        /* margin-top: -15px; */
     }
     .myhome h1{
         text-align: center;
@@ -208,7 +214,7 @@ nav h1{
         flex-direction: column;
     }
     .myimg{
-        margin-top: 20px;
+        margin-top: 300px;
     }
     .jaga{
         display:none;
@@ -236,6 +242,9 @@ nav h1{
     }
     .about-img{
         display: none;
+    }
+    .copyright{
+        left: 10%;
     }
 }
 
@@ -280,7 +289,7 @@ nav h1{
     height: 70vh;
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 1;
-    display: block;
+    display: none;
     justify-content: center;
     align-items: center;
     padding: 50px;
@@ -294,6 +303,18 @@ nav h1{
     padding: 20px;
     
   }
+  .box:hover{
+    scale: 1.1;
+    color:orange;
+  }
+  .box h1{
+    position: absolute;
+    top: 5px;
+  }
+  .box p{
+    position: absolute;
+    bottom: 30px;
+  }
 
   .box {
     background-color: #ffffff;
@@ -303,10 +324,12 @@ nav h1{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     border-radius: 10px;
     height: 150px;
     position: relative;
     box-shadow: 10px 10px 20px rgba(255, 255, 255, 0.3);
+    transition: 0.5s ease-in-out;
   }
   .skill-logo{
     position: absolute;
