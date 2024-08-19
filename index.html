@@ -22,20 +22,25 @@
           <a href="#home"><li onclick="showAbout('home')">Home</li></a>
           <a href="#about"><li class="about-nav" onclick="showAbout('about')">About</li></a>
           <a href="#skills"><li onclick="showAbout('skill')">skills</li></a>
-          <a href=""><li>Contact</li></a>
+          <a href="#project"><li onclick="showAbout('project')">Projects</li></a>
+          <a href="#contact"><li onclick="showAbout('contact')">Contact</li></a>
+         
         </ul>
         <ul class="list-icon">
           <a href="#home"><li onclick="showAbout('home')"><span class="material-symbols-outlined" >home</span></li></a>
           <a href="#about" class="about-nav"><li onclick="showAbout('about')"><span class="material-symbols-outlined" >person</span></li></a>
-          <a href=""><li><span class="material-symbols-outlined" onclick="showAbout('skill')">progress_activity</span></li></a>
-          <a href=""><li><span class="material-symbols-outlined">contacts_product</span></li></a>
+          <a href="#skill"><li onclick="showAbout('skill')"><span class="material-symbols-outlined" >progress_activity</span></li></a>
+          <a href="#project"><li onclick="showAbout('project')"><span class="material-symbols-outlined">production_quantity_limits</span></li></a>
+          <a href="#contact"><li onclick="showAbout('contact')"><span class="material-symbols-outlined">contacts_product</span></li></a>
         </ul>
       </nav>
     </div>
+   
+  
 
 
     <!-- Home -->
-     <section id="home">
+     <section id="home" class="fixed">
       <div>
         <img class="myimg" src="./Images/IMG_1153.JPG" alt="">
       </div>
@@ -52,7 +57,7 @@
       </div>     
      </section>
 
-     <section id="about" class="about">
+     <section id="about" class="about fixed">
           <div class="about-us">
             <div class="about-para">
               <h2>Front-End Developer</h2>
@@ -70,7 +75,7 @@
 
 
      <!-- Skill -->
-    <section id="skill" class="skill">
+    <section id="skill" class="skill fixed">
       <h1 style="text-align: center;color: white;text-decoration: underline;">SKILLS</h1>
       <div class="container">
         <div class="box" ><img class="skill-logo" src="./Images/icons8-html-logo-144.png" alt=""> <h1>HTML</h1>
@@ -91,12 +96,77 @@
       <p>Skilled in building scalable and high-performance web applications with React.js.</p></div>
       </div>
     </section>
-  
+    
 
+    <section class="project fixed" id="project">
+        <h1 style="text-align: center;color: white;text-decoration: underline;">Projects</h1>
+        <div class="container1">
+          <div class="box1"><img src="/Images/spices.png" alt=""> 
+            <div class="project-detail">
+            <h1>Organic Spices</h1>
+            <p>I utilized HTML, CSS, and Bootstrap to create a responsive and visually appealing web application.</p>
+            <a href="https://cozy-dusk-19739f.netlify.app" target="_blank"><span class="material-symbols-outlined link">link</span></a>
+          </div>
+        </div>
+
+          <div class="box1"><img src="/Images/vconnect.png" alt="">
+            <div class="project-detail">
+              <h1>V-Connect</h1>
+              <p>I utilized HTML, CSS, and Bootstrap to create a responsive and visually appealing web application.</p>
+              <a href="https://meek-squirrel-cc673e.netlify.app" target="_blank"><span class="material-symbols-outlined link">link</span></a>
+            </div>
+          </div>
+          <div class="box1"> <img src="/Images/whyglobal.png" alt="">
+            <div class="project-detail">
+              <h1>Why Global Services</h1>
+              <p>I utilized React Js and Tailwind CSS to create visually appealing web application.</p>
+              <a href="https://boisterous-salmiakki-a96a4b.netlify.app" target="_blank"><span class="material-symbols-outlined link">link</span></a>
+            </div>
+          </div>
+          <div class="box1"><img src="/Images/cybersecurity.png" alt="">
+            <div class="project-detail">
+              <h1>Cyber security Services</h1>
+              <p>I utilized React Js and Tailwind CSS to create visually appealing web application.</p>
+              <a href="https://peppy-malasada-8847a0.netlify.app/" target="_blank"><span class="material-symbols-outlined link">link</span></a>
+            </div>
+          </div>
+          <div class="box1"><img src="/Images/portfolio.png" alt="">
+            <div class="project-detail">
+              <h1>My Portfolio</h1>
+              <p>I utilized HTML, CSS, and Javascript to create a responsive and visually appealing web application.</p>
+              <a href="https://peppy-malasada-8847a0.netlify.app/" target="_blank"><span class="material-symbols-outlined link">link</span></a>
+            </div>
+          </div>
+        </div>
+    </section>
+
+
+    <section class="contact fixed" id="contact">
+      <h1>Contact Us</h1>
+      
+      <div style="color: white;margin: 20px 0 20px 0;"> 
+        <p>mobile:6380785706 <br>
+          Email:jagadesh2001kavi@gmail.com <br>
+          LinedIn: <a style="color: white;" href="https://www.linkedin.com/in/jagadeshwaran-m-185223281/" target="_blank">My LinkedIn Page</a>
+        </p>
+      </div>
+      <div class="contact1">
+        
+        <div class="mycontact">
+          <input style="margin-top: 0;" type="text" required placeholder="Your name">
+          <input type="email" required placeholder="Your email">
+          <input type="text" required placeholder="Subject">
+          <input style="height: 100px;" type="text" required placeholder="message">
+          <button class="submit">Submit</button>
+        </div>
+        <div >
+          <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3911.1365891897585!2d78.16242657452482!3d11.397624147429608!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3babc3ad26ec0941%3A0x1d63e1aadeedb24e!2sJagadesh&#39;s%20home!5e0!3m2!1sen!2sin!4v1723881246831!5m2!1sen!2sin"
+         allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section>
+    
      <script src="/script.js"></script>
-     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-     <script>
-      AOS.init();
-    </script>
+     
 </body>
 </html>
