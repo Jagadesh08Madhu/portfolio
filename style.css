@@ -213,7 +213,7 @@ nav h1{
 @media (max-width: 680px){
     #home{
         width: 70%;
-        /* margin-top: -15px; */
+        margin-top: 0px;
     }
     .myhome h1{
         text-align: center;
@@ -226,7 +226,7 @@ nav h1{
         flex-direction: column;
     }
     .myimg{
-        margin-top: 300px;
+        margin-top: 200px;
     }
     .jaga{
         display:none;
