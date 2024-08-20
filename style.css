@@ -244,6 +244,7 @@ nav h1{
         text-align: center;
         overflow-x: hidden;
         margin-top: 0px;
+        padding-top: 450px;
     }
     .about-us{
        flex-direction: column;
@@ -257,11 +258,15 @@ nav h1{
         left: 10%;
     }
 }
-
+.about-para i{
+    padding: 0 10px 10px 10px;
+}
 
 /* About */
 .about{
     display: none;
+    flex-direction: column;
+    overflow-y: scroll;
 }
 .about-us{
     display: flex;
@@ -272,13 +277,21 @@ nav h1{
 .about-para h2{
     color: white;
     padding: 0 0 20px 0;
+    text-decoration: underline;
 }
 .about-para {
     color: white;
     padding-right: 20px;
     padding-left: 30px;
+    
 }
-
+.education{
+    background-color: white;
+    padding: 50px;
+    border-radius: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
 
 
 /* skill */
