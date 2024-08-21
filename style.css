@@ -154,24 +154,7 @@ nav h1{
 .jt{
     display: none;
 }
-@media (max-width: 1310px){
-    .about{
-        overflow-y: scroll;
-        text-align: center;
-        overflow-x: hidden;
-        margin-top: -15px;
-    }
-    .about-us{
-       flex-direction: column;
-    }
-    .about-para{
-        margin-top: 400px;
-        padding: 50px;
-    }
-    .about-img{
-        display: flex;
-    }
-}
+
 
 @media (max-width: 991px) {
     #home{
@@ -192,23 +175,6 @@ nav h1{
     .myimg{
         margin-top: 0px;
     }
-    .about{
-        overflow-y: scroll;
-        text-align: center;
-        overflow-x: hidden;
-        margin-top: -15px;
-    }
-    .about-us{
-       flex-direction: column;
-    }
-    .about-para{
-        margin-top: 400px;
-        padding: 50px;
-    }
-    .about-img{
-        display: flex;
-    }
-    
 }
 @media (max-width: 680px){
     #home{
@@ -239,58 +205,9 @@ nav h1{
         margin-left: 1px;
         border-radius: 0;
     }
-    .about{
-        overflow-y: scroll;
-        text-align: center;
-        overflow-x: hidden;
-        margin-top: 0px;
-        padding-top: 450px;
-    }
-    .about-us{
-       flex-direction: column;
-    }
-    .about-para{
-        /* margin-top: 800px; */
-        padding: 100px !important;
-    }
-   
     .copyright{
         left: 10%;
     }
-}
-.about-para i{
-    padding: 0 10px 10px 10px;
-}
-
-/* About */
-.about{
-    display: none;
-    flex-direction: column;
-    overflow-y: scroll;
-}
-.about-us{
-    display: flex;
-}
-.about-img{
-    width: 500px;
-}
-.about-para h2{
-    color: white;
-    padding: 0 0 20px 0;
-    text-decoration: underline;
-}
-.about-para {
-    color: white;
-    padding-right: 20px;
-    padding-left: 30px;
-    
-}
-.education{
-    background-color: white;
-    padding: 50px;
-    border-radius: 20px;
-    margin-top: 20px;
-    text-align: center;
 }
 
 
